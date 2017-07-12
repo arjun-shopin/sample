@@ -1,8 +1,9 @@
+# new file for password length extended till 20
 import re
 p= raw_input("Input your password")
 x = True
 while x:  
-    if (len(p)<6 or len(p)>16):
+    if (len(p)<6 or len(p)>20):
         break
     elif not re.search("[a-z]",p):
         break
