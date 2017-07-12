@@ -27,11 +27,8 @@ def calc(n):
         print "Please input appropriate number "
     
 
-n=raw_input("Please enter 1 for addition , 2 for subtraction , 3 for multiply and 4 for division , 0 to exit")
-if n.isalpha():
-    print "Please input appropriate number "
-else:
-    while (n!=0):
-        calc(n)
-        n=raw_input("Please enter 1 for addition , 2 for subtraction , 3 for multiply and 4 for division , 0 to exit")    
+n=int(raw_input("Please enter 1 for addition , 2 for subtraction , 3 for multiply and 4 for division , 0 to exit"))
+while (n!=0):
+    calc(n)
+    n=int(raw_input("Please enter 1 for addition , 2 for subtraction , 3 for multiply and 4 for division , 0 to exit"))
     
