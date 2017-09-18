@@ -68,3 +68,12 @@ def data_TokenizationAndTagging(text):
         dataframe.to_csv("PARA_LEVEL_DATA_FOR_AUTOMATION_with_verbs_and_Nouns.csv",index=False,encoding="utf-8")
         
 create_data_with_nouns_N_verbs(master)
+
+
+# dates 
+
+tvr['Date']=pd.to_datetime(tvr['Date']).dt.strftime('%m/%d/%Y')
+tvr['Date']=pd.to_datetime(tvr.Date)
+
+
+
