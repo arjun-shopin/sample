@@ -113,35 +113,6 @@ for file_name in files:
     
     
 
-
-
-
-
-
-
-# CALL THE DATA FRAME FINAL
-
-
-
-# FILTER THE DATA FRAME
-
-
-
-
-
-
-
-
-
-
-
-T=TOPIC_TAGGED_DF(master_df)  
-
-test.to_csv('count_words_2014_6.csv',index=False)       
-
-        
-#master_df.to_csv('match.csv')           
-
                                
 
 
