@@ -65,7 +65,9 @@ def TOPIC_TAGGED_DF(df):
             for sentence in tagged_sentences:
                 for word_tag in sentence:
                     #print word_tag
-                    if word_tag == word or word.startswith(word_tag[0:len(word_tag)-1]) :
+                    #if word_tag == word or word.startswith(word_tag[0:len(word_tag)-1]) :
+                    if (word_tag == word or SnowballStemmer("english").stem(word_tag) ==word
+                        or SnowballStemmer("porter").stem(word_tag)) :
                         c=c+1
             
             df.loc[row_num,word] = c  
